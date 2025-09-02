@@ -1,40 +1,36 @@
-# Prerequisites
-*.d
+### .gitignore
+```gitignore
+# JetBrains IDEs
+.idea/*
+!.idea/courseDetails.yaml
+!.idea/courseignore
+*.iml
+*.ipr
+*.iws
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
+# C/C++ Compiled files
 *.exe
 *.out
 *.app
 *.i*86
 *.x86_64
 *.hex
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.a
+*.la
+*.lo
+
+# Build directories
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
 
 # Debug files
 *.dSYM/
@@ -42,14 +38,31 @@
 *.idb
 *.pdb
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-# debug information files
-*.dwo
+# Temporary files
+*~
+*.swp
+*.swo
+.tmp
+
+# Archives (sauf celle du cours)
+*.zip
+*.tar.gz
+*.rar
+!course-archive.zip
+!resources/course-archive.zip
+
+# Logs
+*.log
+
+# IDE settings (autres que JetBrains)
+.vscode/
+*.code-workspace
